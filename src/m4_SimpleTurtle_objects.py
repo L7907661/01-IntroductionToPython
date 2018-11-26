@@ -10,11 +10,11 @@ Also:
   -- ASSIGNING a VALUE to a NAME (VARIABLE).
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Zeyu Liao.
 """
 ###############################################################################
 #
-# TODO: 1.
+# done: 1.
 #   Yes, that means for YOU to DO things per the following instructions:
 #
 #   On Line 13 above, replace  PUT_YOUR_NAME_HERE  with your OWN name.
@@ -29,7 +29,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 2.
+# done: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -48,7 +48,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 3.
+# done: 3.
 #   Run this module.  A window will pop up and Turtles will move around.
 #   After the Turtles stop moving,
 #      ** click anywhere in the window to close the window **.
@@ -73,6 +73,10 @@ import rosegraphics as rg
 #   change this _TODO_ to DONE and  ** continue to the next _TODO_ (below). **
 #
 ###############################################################################
+rg.SimpleTurtle()
+natasha = rg.SimpleTurtle()
+natasha.forward(120)
+natasha.speed = 10
 
 # -----------------------------------------------------------------------------
 # The next few lines show how to:
@@ -81,7 +85,7 @@ import rosegraphics as rg
 # (shorthand for rosegraphics) module.
 # -----------------------------------------------------------------------------
 window = rg.TurtleWindow()
-window.delay(20)  # Bigger numbers mean slower animation.
+window.delay(2)  # Bigger numbers mean slower animation.
 
 # -----------------------------------------------------------------------------
 # The next few lines show how to:
@@ -116,7 +120,7 @@ natasha.go_to(rg.Point(-100, 200))
 
 ###############################################################################
 #
-# TODO: 4.
+# done: 4.
 #   Add a few more lines of your own code to make one of the existing
 #   SimpleTurtles move some more and/or have different characteristics.
 #
@@ -126,10 +130,16 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
+na = rg.SimpleTurtle()
+na.pen = rg.Pen('red', 30)
+na.speed = 10
+na.forward(120)
+na.speed=100
+na.left(90)
 
 ###############################################################################
 #
-# TODO: 5.
+# done: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
@@ -153,10 +163,16 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
-
+miao = rg.SimpleTurtle()
+miao.pen = rg.Pen('green', 10)
+miao.speed = 10
+miao.go_to(rg.Point(0,-50))
+miao.right(50)
+miao.speed=100
+miao.draw_circle(60)
 ###############################################################################
 #
-# TODO: 6.
+# done: 6.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #   Run one more time to be sure that all is still OK.
 #
